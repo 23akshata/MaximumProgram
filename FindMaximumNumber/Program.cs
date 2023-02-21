@@ -14,6 +14,7 @@ namespace FindMaximum
             FindIntMax integerfindmax = new FindIntMax();
             integerfindmax.FindMaxValue(13,20,23);
             integerfindmax.FindMaxValue(9.5f, 10.2f, 23.4f);
+            integerfindmax.FindMaxValue("ram", "shyam", "dip");
             Console.ReadLine();
         }
     }

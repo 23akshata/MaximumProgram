@@ -30,7 +30,7 @@ namespace FindMaximum
         {
             if (First.CompareTo(Second) > 0 && First.CompareTo(Third) > 0)
             {
-                Console.WriteLine("first is greater :" +First);
+                Console.WriteLine("first is greater :" + First);
             }
             else if (Second.CompareTo(First) > 0 && Second.CompareTo(Third) > 0)
             {
@@ -38,7 +38,25 @@ namespace FindMaximum
             }
             else if (Third.CompareTo(First) > 0 && Third.CompareTo(Second) > 0)
             {
-                Console.WriteLine("third is greater :" +Third);
+                Console.WriteLine("third is greater :" + Third);
+            }
+            else
+                Console.WriteLine("All Numbers are Equal! ");
+
+        }
+        public void FindMaxValue(string First, string Second, string Third)
+        {
+            if (First.CompareTo(Second) >= 0 && First.CompareTo(Third) >= 0)
+            {
+                Console.WriteLine("First is greater :" + First);
+            }
+            else if (Second.CompareTo(First) >= 0 && Second.CompareTo(Third) >= 0)
+            {
+                Console.WriteLine("second is greater :" + Second);
+            }
+            else if (Third.CompareTo(First) >= 0 && Third.CompareTo(Second) >= 0)
+            {
+                Console.WriteLine("third is greater :" + Third);
             }
             else
                 Console.WriteLine("All Numbers are Equal! ");

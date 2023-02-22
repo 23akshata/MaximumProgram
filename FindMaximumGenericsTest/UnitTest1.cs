@@ -4,27 +4,27 @@ namespace FindMaximumGenericsTest
     public class Tests
     {
 
-        MaxGeneric<float> floatmax = new MaxGeneric <float>();
+        MaxGeneric<string> stringmax = new MaxGeneric <string>();
         
         [Test]
-        public void FindMaxInt_Analyse_WhenFirstValueIsMax()
+        public void FindMaxstring_Analyse_WhenFirstValueIsMax()
         {
-            float result = floatmax.GenricValue(2.0f, 1.7f, 1.2f);
-            Assert.AreEqual(2.0f, result);
+            string result = stringmax.GenricValue("Peach","Banana","Apple");
+            Assert.AreEqual("Peach", result);
             Assert.Pass();
         }
         [Test]
-        public void FindMaxInt_Analyse_WhenSecondValueIsMax()
+        public void FindMaxstring_Analyse_WhenSecondValueIsMax()
         {
-            float result = floatmax.GenricValue(1.7f, 2.0f, 1.2f);
-            Assert.AreEqual(2.0f, result);
+            string result = stringmax.GenricValue("Banana", "Peach", "Apple");
+            Assert.AreEqual("Peach", result);
             Assert.Pass();
         }
         [Test]
-        public void FindMaxInt_Analyse_WhenThirdValueIsMax()
+        public void FindMaxstring_Analyse_WhenThirdValueIsMax()
         {
-            float result = floatmax.GenricValue(1.2f, 1.6f, 2.0f);
-            Assert.AreEqual(2.0f, result);
+            string result = stringmax.GenricValue("Banana","Peach","Zebra");
+            Assert.AreEqual("Zebra", result);
             Assert.Pass();
         }
 
